@@ -7,14 +7,16 @@
 //
 
 import UIKit
+import KindleKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        guard let parsed = try? KindleKit.parse(kindleCSV: csvString) else { return }
+        print(parsed)
     }
-
-
 }
 

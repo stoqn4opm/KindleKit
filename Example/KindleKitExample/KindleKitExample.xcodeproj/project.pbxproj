@@ -12,7 +12,24 @@
 		5E451B332184F81A008F3F5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E451B312184F81A008F3F5D /* Main.storyboard */; };
 		5E451B352184F81B008F3F5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E451B342184F81B008F3F5D /* Assets.xcassets */; };
 		5E451B382184F81B008F3F5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E451B362184F81B008F3F5D /* LaunchScreen.storyboard */; };
+		5E451B402184F8F1008F3F5D /* KindleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E451B3F2184F8F1008F3F5D /* KindleKit.framework */; };
+		5E451B412184F8F1008F3F5D /* KindleKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E451B3F2184F8F1008F3F5D /* KindleKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E451B452184F95C008F3F5D /* SampleCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E451B442184F95C008F3F5D /* SampleCSV.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5E451B422184F8F1008F3F5D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5E451B412184F8F1008F3F5D /* KindleKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5E451B2A2184F81A008F3F5D /* KindleKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KindleKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +39,8 @@
 		5E451B342184F81B008F3F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E451B372184F81B008F3F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E451B392184F81B008F3F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E451B3F2184F8F1008F3F5D /* KindleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KindleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E451B442184F95C008F3F5D /* SampleCSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCSV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E451B402184F8F1008F3F5D /* KindleKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				5E451B2C2184F81A008F3F5D /* KindleKitExample */,
+				5E451B432184F8F8008F3F5D /* Frameworks */,
 				5E451B2B2184F81A008F3F5D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +77,21 @@
 			children = (
 				5E451B2D2184F81A008F3F5D /* AppDelegate.swift */,
 				5E451B2F2184F81A008F3F5D /* ViewController.swift */,
+				5E451B442184F95C008F3F5D /* SampleCSV.swift */,
 				5E451B312184F81A008F3F5D /* Main.storyboard */,
 				5E451B342184F81B008F3F5D /* Assets.xcassets */,
 				5E451B362184F81B008F3F5D /* LaunchScreen.storyboard */,
 				5E451B392184F81B008F3F5D /* Info.plist */,
 			);
 			path = KindleKitExample;
+			sourceTree = "<group>";
+		};
+		5E451B432184F8F8008F3F5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E451B3F2184F8F1008F3F5D /* KindleKit.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +104,7 @@
 				5E451B262184F81A008F3F5D /* Sources */,
 				5E451B272184F81A008F3F5D /* Frameworks */,
 				5E451B282184F81A008F3F5D /* Resources */,
+				5E451B422184F8F1008F3F5D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E451B302184F81A008F3F5D /* ViewController.swift in Sources */,
+				5E451B452184F95C008F3F5D /* SampleCSV.swift in Sources */,
 				5E451B2E2184F81A008F3F5D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import Foundation
 // MARK: Public Interface
 
 /// Library that contains all functionality needed to parse a Kindle eReader generated `CSV` file.
-struct KindleKit {
+public struct KindleKit {
     private init() {}
     
     /// Tries to parse Kindle eReader generated 'CSV' file into a convenient format.
@@ -47,7 +47,7 @@ extension KindleKit {
         
         
         public var description: String {
-            return "<NotesContainer> bookName: '\(bookName)',\n'\(bookAuthor)',\n'\(notes)'"
+            return "<NotesContainer> bookName: '\(bookName)',\n'\(bookAuthor)', '\(notes)'"
         }
     }
 }
