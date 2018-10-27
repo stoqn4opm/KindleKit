@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5E451AF72184F47D008F3F5D /* KindleKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E451AF52184F47D008F3F5D /* KindleKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E451B002184F576008F3F5D /* NotesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E451AFD2184F576008F3F5D /* NotesContainer.swift */; };
+		5E451B012184F576008F3F5D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E451AFE2184F576008F3F5D /* Errors.swift */; };
+		5E451B022184F576008F3F5D /* String+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E451AFF2184F576008F3F5D /* String+Parsing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E451AF22184F47D008F3F5D /* KindleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KindleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E451AF52184F47D008F3F5D /* KindleKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KindleKit.h; sourceTree = "<group>"; };
 		5E451AF62184F47D008F3F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E451AFD2184F576008F3F5D /* NotesContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesContainer.swift; sourceTree = "<group>"; };
+		5E451AFE2184F576008F3F5D /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		5E451AFF2184F576008F3F5D /* String+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Parsing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				5E451AF52184F47D008F3F5D /* KindleKit.h */,
 				5E451AF62184F47D008F3F5D /* Info.plist */,
+				5E451AFE2184F576008F3F5D /* Errors.swift */,
+				5E451AFD2184F576008F3F5D /* NotesContainer.swift */,
+				5E451AFF2184F576008F3F5D /* String+Parsing.swift */,
 			);
 			path = KindleKit;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					5E451AF12184F47D008F3F5D = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -130,6 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E451B022184F576008F3F5D /* String+Parsing.swift in Sources */,
+				5E451B012184F576008F3F5D /* Errors.swift in Sources */,
+				5E451B002184F576008F3F5D /* NotesContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +201,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -246,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -261,6 +274,7 @@
 		5E451AFB2184F47D008F3F5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.stoyan-stoyanov.KindleKit";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +301,7 @@
 		5E451AFC2184F47D008F3F5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
