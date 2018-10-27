@@ -37,13 +37,13 @@ extension KindleKit {
     public struct NotesContainer: CustomStringConvertible {
         
         /// The name of the book as seen on the second line from the CSV file.
-        let bookName: String
+        public let bookName: String
         
         /// The name of the author of the book as seen on the third line from the CSV file.
-        let bookAuthor: String
+        public let bookAuthor: String
         
         /// All notes contained inside the 'CSV' that this `NotesContainer` represents.
-        let notes: [Note]
+        public let notes: [Note]
         
         
         public var description: String {
@@ -60,16 +60,16 @@ extension KindleKit {
     public struct Note: CustomStringConvertible {
         
         /// The type of annotation that the user has made (example yellow highlight)
-        let annotationType: String
+        public let annotationType: String
         
         /// The page on which this note is in the book.
-        let location: String
+        public let location: String
         
         /// Still not clear what is this.
-        let isStarred: String
+        public let isStarred: String
         
         /// The main content of this note.
-        let annotation: String
+        public let annotation: String
         
         public var description: String {
             return "\n<Note> annotationType: '\(annotationType)', location: '\(location)', isStarred: '\(isStarred)', annotation: '\(annotation)'"
