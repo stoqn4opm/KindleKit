@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		5E109EFC218DF5F500EEFAB8 /* KindleKit Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5E109EFF218DF5F500EEFAB8 /* Build configuration list for PBXAggregateTarget "KindleKit Documentation" */;
+			buildPhases = (
+				5E109F00218DF60300EEFAB8 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "KindleKit Documentation";
+			productName = "KindleKit Documentation";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		5E451AF72184F47D008F3F5D /* KindleKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E451AF52184F47D008F3F5D /* KindleKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E451B002184F576008F3F5D /* NotesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E451AFD2184F576008F3F5D /* NotesContainer.swift */; };
@@ -102,6 +116,9 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Stoyan Stoyanov";
 				TargetAttributes = {
+					5E109EFC218DF5F500EEFAB8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					5E451AF12184F47D008F3F5D = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -121,6 +138,7 @@
 			projectRoot = "";
 			targets = (
 				5E451AF12184F47D008F3F5D /* KindleKit */,
+				5E109EFC218DF5F500EEFAB8 /* KindleKit Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -134,6 +152,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E109F00218DF60300EEFAB8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# pass as first argument the folder name in which you want your documentation to be placed.    \n# pass as second argument the visibility level you want to be seen. (private | internal | public | open)\n# pass as third argument where is your README file in your repo from the locality of the directory that holds this project file.\nsh ../Scripts/JazzyDocsGen.sh ../Documentation private ../README.md\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E451AEE2184F47D008F3F5D /* Sources */ = {
@@ -149,6 +187,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		5E109EFD218DF5F500EEFAB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPF77J63K7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E109EFE218DF5F500EEFAB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPF77J63K7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		5E451AF82184F47D008F3F5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -327,6 +383,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5E109EFF218DF5F500EEFAB8 /* Build configuration list for PBXAggregateTarget "KindleKit Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E109EFD218DF5F500EEFAB8 /* Debug */,
+				5E109EFE218DF5F500EEFAB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5E451AEC2184F47D008F3F5D /* Build configuration list for PBXProject "KindleKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

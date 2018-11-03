@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KindleKit Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/KindleKit" class="dashAnchor"></a>
+    <a title="KindleKit Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (95% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        KindleKit Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/KindleKit.html">KindleKit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KindleKit/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KindleKit/NotesContainer.html">– NotesContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KindleKit/Note.html">– Note</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>KindleKit</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KindleKit</span></code></pre>
+
+                </div>
+              </div>
+            <p>Library that contains all functionality needed to parse a Kindle eReader generated <code>CSV</code> file.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9KindleKitAAVAByc33_CECF0F9AAEA762FBE641BCB87B2D4750Llfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9KindleKitAAVAByc33_CECF0F9AAEA762FBE641BCB87B2D4750Llfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9KindleKitAAV5parse9kindleCSVAB14NotesContainerVSS_tKFZ"></a>
+                    <a name="//apple_ref/swift/Method/parse(kindleCSV:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9KindleKitAAV5parse9kindleCSVAB14NotesContainerVSS_tKFZ">parse(kindleCSV:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tries to parse Kindle eReader generated &lsquo;CSV&rsquo; file into a convenient format.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    parsing error if string&rsquo;s format is not valid.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">parse</span><span class="p">(</span><span class="nv">kindleCSV</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">KindleKit</span><span class="o">.</span><span class="kt"><a href="../Structs/KindleKit/NotesContainer.html">NotesContainer</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>kindleCSV</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String that is formatted in the way that Kindle eReader generated csv is when user shares its <code>Notes</code> and <code>Highlights</code> from a given book.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>object that contains all data from this csv if it is in valid format.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Errors"></a>
+                <a name="//apple_ref/swift/Section/Errors" class="dashAnchor"></a>
+                <a href="#/Errors">
+                  <h3 class="section-name">Errors</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9KindleKitAAV5ErrorO"></a>
+                    <a name="//apple_ref/swift/Enum/Error" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9KindleKitAAV5ErrorO">Error</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>All Possible errors that can occur during parsing of CSV string from Kidle&rsquo;s CSV format.</p>
+
+                        <a href="../Structs/KindleKit/Error.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Error</span> <span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Note%20Container"></a>
+                <a name="//apple_ref/swift/Section/Note Container" class="dashAnchor"></a>
+                <a href="#/Note%20Container">
+                  <h3 class="section-name">Note Container</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9KindleKitAAV14NotesContainerV"></a>
+                    <a name="//apple_ref/swift/Struct/NotesContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9KindleKitAAV14NotesContainerV">NotesContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Representation of &lsquo;CSV&rsquo; file from a Kindle&rsquo;s eReader&rsquo;s CSV export.</p>
+
+                        <a href="../Structs/KindleKit/NotesContainer.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NotesContainer</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Note"></a>
+                <a name="//apple_ref/swift/Section/Note" class="dashAnchor"></a>
+                <a href="#/Note">
+                  <h3 class="section-name">Note</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9KindleKitAAV4NoteV"></a>
+                    <a name="//apple_ref/swift/Struct/Note" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9KindleKitAAV4NoteV">Note</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Representation of single <code>Note</code> or <code>Hightlight</code> from a Kindle&rsquo;s eReader&rsquo;s CSV export.</p>
+
+                        <a href="../Structs/KindleKit/Note.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Note</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-11-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
